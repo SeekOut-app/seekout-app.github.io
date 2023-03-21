@@ -73,6 +73,19 @@
 	</style>
 </head>
 <body>
+	<body>
+	<p>L'URL de cette page est :</p>
+	<p id="url"></p>
+
+	<script>
+		// Récupération de l'URL de la page
+		var url = window.location.href;
+
+		// Affichage de l'URL dans la page
+		document.getElementById("url").textContent = url;
+	</script>
+</body>
+	
 	<header>
 		<h1>Créer et partager des courses d'orientation</h1>
 	</header>
