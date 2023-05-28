@@ -79,9 +79,18 @@
 		<h1>Créer et partager des courses d'orientation</h1>
 	</header>
 	<main>
+					<script>
+		// Récupération de l'URL de la page
+		let url = window.location.href;
+		let urlParts = url.split("/");
+		let pageName = "seekoutco://" + urlParts[urlParts.length - 1];
+
+		// Affichage de l'URL dans la page
+// 		document.getElementById("url").textContent = url;
+	</script>
 		<div class="card">
 			<img src="https://th.bing.com/th/id/R.9ab99c0d84cb486c06a297a605d8bbf9?rik=0IcPiyOYhr1%2f7A&pid=ImgRaw&r=0" alt="Carte de course d'orientation">
 			<h2>Créer une course</h2>
 			<p>Utilisez notre application pour créer une course d'orientation personnalisée avec des cartes détaillées et des défis stimulants.</p>
-			<button onclick="window.location.href = 'seekoutco://creer-une-course';">Ouvrir l'application</button>
+			<button onclick="window.location.href = pageName;">Ouvrir l'application</button>
 		</div>
